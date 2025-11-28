@@ -548,7 +548,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                         <img src="/ap_project1/super_admin/includes/Screenshot1-removebg-preview.png" alt="Logo of Urban Medical" 
+                         <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764058940/Screenshot1-removebg-preview_itx3n8.png" alt="Logo of Urban Medical" 
                          style="height: 30px; width: 50px">
                     <span>URBAN MEDICAL HOSPITAL</span>
                 </div>
@@ -573,7 +573,7 @@
                     <a href="#services" class="btn-services">See All Services</a>
                 </div>
                 <div class="hero-image">
-                    <img src="doctor_pic.jpg" alt="Doctor">
+                    <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052878/doctor_pic_c6apvn.jpg" alt="Doctor">
                 </div>
             </div>
         </div>
@@ -600,7 +600,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="cardiologist_pic.jpg" alt="Cardiovascular">
+                        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052874/cardiologist_pic_epflnm.jpg" alt="Cardiovascular">
                         <div class="service-badge">❤️</div>
                     </div>
                     <div class="service-content">
@@ -610,7 +610,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="pedia_pic.jpg" alt="Pediatrics">
+                        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052814/pedia_pic_ey0fu7.jpg" alt="Pediatrics">
                         <div class="service-badge">👶</div>
                     </div>
                     <div class="service-content">
@@ -620,7 +620,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="laboratory_pic.jpg" alt="laboratory & Diagnostics">
+                        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052890/laboratory_pic_ijqwkb.jpg" alt="laboratory & Diagnostics">
                         <div class="service-badge">🧪</div>
                     </div>
                     <div class="service-content">
@@ -630,7 +630,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-image">
-                        <img src="obgyne_pic.jpg" alt="OB-GYN">
+                        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052868/obgyne_pic_zhl5en.jpg" alt="OB-GYN">
                         <div class="service-badge">👩‍⚕️</div>
                     </div>
                     <div class="service-content">
@@ -640,7 +640,7 @@
                 </div>
                  <div class="service-card">
                     <div class="service-image">
-                        <img src="mental_health.jpg" alt="Mental Health Counseling">
+                        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764052875/mental_health_arhkts.jpg" alt="Mental Health Counseling">
                         <div class="service-badge">🧠</div>
                     </div>
                     <div class="service-content">
@@ -683,4 +683,5 @@
         </div>
     </section>
 </body>
+
 </html>
