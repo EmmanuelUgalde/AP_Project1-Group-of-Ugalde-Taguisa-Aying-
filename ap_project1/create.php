@@ -235,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <body>
 
 <div class="logo-section">
-    <img src="/ap_project1/super_admin/includes/Screenshot1-removebg-preview.png" alt="Urban Medical Hospital">
+    <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764058940/Screenshot1-removebg-preview_itx3n8.png" alt="Urban Medical Hospital">
 </div>
 
 <div class="main-container">
@@ -275,7 +275,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
     <div class="image-section">
-        <img src="/ap_project1/super_admin/includes/Screenshot_2.png" alt="Medical Tools">
+        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764058940/Screenshot_2_psapod.png" alt="Medical Tools">
     </div>
 </div>
 
@@ -289,4 +289,5 @@ function showLinkSelect() {
 </script>
 
 </body>
+
     </html>
