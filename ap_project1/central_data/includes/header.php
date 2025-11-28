@@ -175,7 +175,7 @@
     </div>
 </div>
 
-<img src="/ap_project1/super_admin/includes/Screenshot1-removebg-preview.png" alt="Logo of Urban Medical" class="logo">
+<img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764058940/Screenshot1-removebg-preview_itx3n8.png" alt="Logo of Urban Medical" class="logo">
         <h1 class="headline1">Urban Medical Hospital</h1>
 
 
@@ -221,3 +221,4 @@ hamburger.addEventListener('click', () => {
 </script>
 </body>
 </html>
+
