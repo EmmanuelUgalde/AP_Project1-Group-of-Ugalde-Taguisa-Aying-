@@ -530,7 +530,7 @@
         <div class="container">
             <div class="top-bar-content">
                 <div class="top-bar-left">
-                    <span>📧 info@MedSync.com</span>
+                    <span>📧 info@UrbanMed.com</span>
                     <span>📍 Cebu City, Philippines</span>
                 </div>
                 <div class="top-bar-right">
@@ -685,3 +685,4 @@
 </body>
 
 </html>
+
