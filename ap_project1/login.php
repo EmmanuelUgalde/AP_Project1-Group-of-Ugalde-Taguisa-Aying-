@@ -249,7 +249,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
 
 <div class="description">
-        <img src="central_data/includes/Screenshot_2.png" alt="Description About the Hospital">
+        <img src="https://res.cloudinary.com/dlsr0ebdd/image/upload/v1764053455/Screenshot_2_jdqdx3.png" alt="Description About the Hospital">
 </div>
 <?php include "central_data/includes/footer.html"; ?>
 
@@ -262,3 +262,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 </html>
 </html>
+
