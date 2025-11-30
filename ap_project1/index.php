@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            color: #333;
+            background: linear-gradient(135deg, #EFF6FF 0%, #E0E7FF 50%, #DBEAFE 100%);
             line-height: 1.6;
         }
 
@@ -685,4 +685,5 @@
 </body>
 
 </html>
+
 
