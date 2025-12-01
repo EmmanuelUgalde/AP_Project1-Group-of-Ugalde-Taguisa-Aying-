@@ -30,32 +30,54 @@ if ($userId) {
     $stmt->close();
 }
 
-$patientCount = $conn->query("
+$patientCount = 0;
+$stmt = $conn->prepare("
     SELECT COUNT(DISTINCT P.PAT_ID) AS total
     FROM APPOINTMENT A
     JOIN PATIENT P ON A.PAT_ID = P.PAT_ID
-    WHERE A.DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = $userId)
-")->fetch_assoc()['total'];
+    WHERE A.DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = ?)
+");
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+if ($row = $result->fetch_assoc()) {
+    $patientCount = $row['total'];
+}
+$stmt->close();
 
-$appointmentCount = $conn->query("
+$appointmentCount = 0;
+$stmt = $conn->prepare("
     SELECT COUNT(*) AS total
     FROM APPOINTMENT
-    WHERE DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = $userId)
-")->fetch_assoc()['total'];
+    WHERE DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = ?)
+");
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+if ($row = $result->fetch_assoc()) {
+    $appointmentCount = $row['total'];
+}
+$stmt->close();
 
 $monthlyAppointments = array_fill(0, 12, 0);
-$apptResult = $conn->query("
+
+$stmt = $conn->prepare("
     SELECT MONTH(APPT_DATE) AS month, COUNT(*) AS total
     FROM APPOINTMENT
-    WHERE DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = $userId)
+    WHERE DOC_ID = (SELECT DOC_ID FROM USER WHERE USER_ID = ?)
       AND YEAR(APPT_DATE) = YEAR(CURDATE())
     GROUP BY MONTH(APPT_DATE)
 ");
-if ($apptResult) {
-    while ($row = $apptResult->fetch_assoc()) {
-        $monthlyAppointments[$row['month'] - 1] = (int)$row['total'];
-    }
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$result = $stmt->get_result();
+
+while ($row = $result->fetch_assoc()) {
+    $monthlyAppointments[$row['month'] - 1] = (int)$row['total'];
 }
+
+$stmt->close();
+
 
 $appointments = [];
 if ($userId) {
